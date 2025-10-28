@@ -1,0 +1,619 @@
+<!-- https://www.dataedupt.kr/sub/study/exam1result1.php?exam=90&qNum=1 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <base href="https://www.dataedupt.kr/">
+</head>
+<style>
+	body {width:100%;}
+	.container {width:600px;margin:0 auto}	
+	.eg1 {padding:10px 0px; text-align:center;width:100%;}
+	.tg2 {border-bottom:1px solid #ddd;padding:5% 5%;}
+	.cp1question1 {padding-bottom:12px;}
+img {
+  width: 100%;
+  height: 100%;
+  max-width:600px;
+  object-fit: contain; /* 또는 cover */
+}
+	
+</style>
+<body>
+
+<div id="body_content">
+<!-- container -->
+<div class="container clearfix">
+	<div class="sg1">
+		<div class="w1-0">
+			<span class="g1">3과목</span>
+			<span class="g1">R 기초</span>
+			<b class=""></b> <!-- 정답 s1 | 오답 s2 -->
+		</div>
+	</div>
+
+
+<h3 class="hb1 h3">2장 - R 프로그래밍 기초</h3>
+
+<!-- cp1question1 -->
+<div class="cp1question1">
+	<div class="tg1">
+		<strong class="tt1">
+			<span class="tt1n">1.</span>
+			<span class="tt1t1">
+				아래 R코드를 수행한 결과로 적절한 것은?					
+					<span class="tt1t1">
+						&gt; “+”(2,3)					</span>
+							</span>
+		</strong>
+		<span class="tt1t1">
+				    </span> 
+	</div>
+	<ol class="lst1">
+				<li class="li1"><a class="a1"><span class="t1">
+			에러 메시지가 출력된다. 					</span></a></li>
+		<li class="li1"><a class="a1"><span class="t1">
+			경고 메시지가 출력된다. 					</span></a></li>
+		<li class="li1"><a class="a1"><span class="t1">
+			숫자 5가 출력된다.					</span></a></li>
+		<li class="li1"><a class="a1"><span class="t1">
+			두 개의 원소로 이루어진 벡터가 출력된다.					</span></a></li>
+					</ol>
+	<div class="eg1">
+		<a href="#m-help1a1" class="b2 help on" title="해설 여닫기"> <!-- m-help1a1, m-help1a2, … -->
+			<span class="t1">정답보기</span>
+			<i class="ic1"></i>
+		</a>
+	</div>
+	<div class="tg2 loaded" id="m-help1a1" style=""> <!-- m-help1a1, m-help1a2, … -->
+		<strong class="tt1">정답</strong>
+		<div class="t2">
+						<i class="t2n">3</i>
+			<span class="t2t1">
+			숫자 5가 출력된다.			</span>
+					</div>
+        <br>
+          
+        
+				<strong class="tt1">해설</strong>
+		<div class="t1">
+		해당 코드를 실행하면 다음과 같이 출력된다.<br>
+&gt; "+"(2,3)<br>
+[1] 5				</div>
+        
+		<!-- 비기봇 해설 -->
+				<a class="more">
+			<span class="more-t1">
+				<i>비</i><i>기</i><i>봇</i><i>에</i><i>게</i><i>&nbsp;</i><i>문</i><i>의</i><i>중</i><i>…</i>
+			</span>
+			<i class="more-ic1"></i>
+		</a>
+		<div class="more-c">
+			<strong class="tt1">비기봇 해설</strong>
+			<div class="t1">
+				R에서 + 연산자는 함수처럼 사용할 수 있습니다. R에서는 이항 연산자(+, -, *, / 등)를 함수 호출 방식으로 사용하려면 연산자를 따옴표(" ")로 감싸고, 괄호 안에 인수를 전달합니다.<br>
+<br>
+주어진 코드를 실행하면 다음과 같은 결과가 출력됩니다:<br>
+<br>
+&gt;"+"(2, 3)<br>
+[1] 5<br>
+<br>
++ 연산자가 함수처럼 호출되어 2 + 3 연산을 수행하며 결과는 5가 됩니다.<br>
+따라서 정답은 "3. 숫자 5가 출력된다." 입니다.<br>
+			</div>
+			<div class="t2">
+									#R									# 연산자									# 에러 메시지							</div>
+		</div>
+		 
+		<!-- /비기봇 해설 -->
+	</div>
+</div>
+<!-- /cp1question1 -->
+<!-- cp1question1 -->
+<div class="cp1question1">
+	<div class="sg1">
+		<div class="w1">
+			<span class="g1">3과목</span>
+			<span class="g1">데이터 타입과 구조</span>
+			<b class=""></b> <!-- 정답 s1 | 오답 s2 -->
+		</div>
+		<div class="w2">
+			<button type="button" class="b1 button type0 m-cunning " onclick="bookmark(6421);" title="컨닝페이퍼에 추가"><i class="ic1"></i><span class="t1 blind">북마크</span></button>
+		</div>
+	</div>
+	<div class="tg1">
+		<strong class="tt1">
+			<span class="tt1n">2.</span>
+			<span class="tt1t1">
+				새로운 워크스페이스에서 다음의 명령어들을 수행시켰다. 이때 에러를 생성하는 명령어는?							</span>
+		</strong>
+		<span class="tt1t1">
+				    </span> 
+	</div>
+	<ol class="lst1">
+				<li class="li1"><a class="a1"><span class="t1">
+			c(2, 1, TRUE)					</span></a></li>
+		<li class="li1"><a class="a1"><span class="t1">
+			c(2, ab, cd) 					</span></a></li>
+		<li class="li1"><a class="a1"><span class="t1">
+			c(pi, 2*pi) 					</span></a></li>
+		<li class="li1"><a class="a1"><span class="t1">
+			c(FALSE, 3, 5)					</span></a></li>
+					</ol>
+	<div class="eg1">
+		<a href="#m-help1a2" class="b2 help on" title="해설 여닫기"> <!-- m-help1a1, m-help1a2, … -->
+			<span class="t1">정답보기</span>
+			<i class="ic1"></i>
+		</a>
+	</div>
+	<div class="tg2 loaded" id="m-help1a2" style=""> <!-- m-help1a1, m-help1a2, … -->
+		<strong class="tt1">정답</strong>
+		<div class="t2">
+						<i class="t2n">2</i>
+			<span class="t2t1">
+			c(2, ab, cd) 			</span>
+					</div>
+        <br>
+          
+        
+				<strong class="tt1">해설</strong>
+		<div class="t1">
+		c(2, ab, cd)는 에러를 발생시킨다. R에서 벡터는 동일한 타입의 원소로 구성되어야 하며, ab와 cd는 문자열이기 때문에 인용부호(" ")가 필요하다. 인용부호 없이 작성하면 에러가 발생한다. 나머지 명령어 c(2, 1, TRUE)와 c(FALSE, 3, 5)는 논리형이 자동으로 숫자형으로 변환되고, c(pi, 2*pi)는 pi가 숫자형 상수이므로 정상적으로 수행된다.				</div>
+        
+		<!-- 비기봇 해설 -->
+				<a class="more">
+			<span class="more-t1">
+				<i>비</i><i>기</i><i>봇</i><i>에</i><i>게</i><i>&nbsp;</i><i>문</i><i>의</i><i>중</i><i>…</i>
+			</span>
+			<i class="more-ic1"></i>
+		</a>
+		<div class="more-c">
+			<strong class="tt1">비기봇 해설</strong>
+			<div class="t1">
+				명령어 실행 결과는 아래와 같습니다.<br>
+<br>
+1. c(2, 1, TRUE)<br>
+• 결과<br>
+[1] 2 1 1<br>
+: 벡터 c() 함수는 가장 큰 데이터 타입으로 자동 변환(Coercion)합니다. 2 (numeric), 1 (numeric), TRUE (logical)이므로, TRUE가 1로 변환됩니다.<br>
+<br>
+2. c(2, ab, cd)<br>
+: ab, cd는 정의되지 않은 변수이므로, 실행 시 "object 'ab' not found" 에러가 발생합니다. 만약 "ab", "cd"처럼 문자열로 감싸면 정상적으로 실행됩니다.<br>
+<br>
+3. c(pi, 2*pi)<br>
+• 결과<br>
+[1] 3.141593 6.283185<br>
+: pi는 R에서 미리 정의된 상수(3.141592...)이며, 2*pi도 유효한 연산입니다.<br>
+<br>
+4. c(FALSE, 3, 5)<br>
+• 결과<br>
+[1] 0 3 5<br>
+: FALSE는 0으로 변환되며, 숫자 벡터가 생성됩니다.<br>
+<br>
+따라서 정답은 2. c(2, ab, cd)입니다.<br>
+			</div>
+			<div class="t2">
+									#R 벡터									# 데이터 타입 변환									# 자동 형 변환							</div>
+		</div>
+		 
+		<!-- /비기봇 해설 -->
+	</div>
+</div>
+<!-- /cp1question1 -->
+<!-- cp1question1 -->
+<div class="cp1question1">
+	<div class="sg1">
+		<div class="w1">
+			<span class="g1">3과목</span>
+			<span class="g1">데이터 타입과 구조</span>
+			<b class=""></b> <!-- 정답 s1 | 오답 s2 -->
+		</div>
+		<div class="w2">
+			<button type="button" class="b1 button type0 m-cunning " onclick="bookmark(6422);" title="컨닝페이퍼에 추가"><i class="ic1"></i><span class="t1 blind">북마크</span></button>
+		</div>
+	</div>
+	<div class="tg1">
+		<strong class="tt1">
+			<span class="tt1n">3.</span>
+			<span class="tt1t1">
+				아래 그림과 같이 두개의 데이터 프레임 dfm1, dfm2 를 T_name 이라는 변수로 결합하고자 할 때, 사용되는 함수는 어느 것인가?							</span>
+		</strong>
+		<span class="tt1t1">
+						<a href="exam1view1img1.php?img=0ef1ca16-bf27-d905-af16-f49ebe8bf3a1.png" target="_blank" rel="noopener" title="새 창" class="p1">
+				<img src="https://www.dataedupt.kr/data/img/question/0ef1ca16-bf27-d905-af16-f49ebe8bf3a1.png" alt="문제에 포함된 이미지">
+			</a>
+				    </span> 
+	</div>
+	<ol class="lst1">
+				<li class="li1"><a class="a1"><span class="t1">
+			cbind(dfm1, dfm2, by=“T_name”)					</span></a></li>
+		<li class="li1"><a class="a1"><span class="t1">
+			rbind(dfm1, dfm2, by=“T_name”)					</span></a></li>
+		<li class="li1"><a class="a1"><span class="t1">
+			merge(dfm1, dfm2, by=“T_name”)					</span></a></li>
+		<li class="li1"><a class="a1"><span class="t1">
+			subset(dfm1, dfm2, by=“T_name”)					</span></a></li>
+					</ol>
+	<div class="eg1">
+		<a href="#m-help1a3" class="b2 help on" title="해설 여닫기"> <!-- m-help1a1, m-help1a2, … -->
+			<span class="t1">정답보기</span>
+			<i class="ic1"></i>
+		</a>
+	</div>
+	<div class="tg2 loaded" id="m-help1a3" style=""> <!-- m-help1a1, m-help1a2, … -->
+		<strong class="tt1">정답</strong>
+		<div class="t2">
+						<i class="t2n">3</i>
+			<span class="t2t1">
+			merge(dfm1, dfm2, by=“T_name”)			</span>
+					</div>
+        <br>
+          
+        
+				<strong class="tt1">해설</strong>
+		<div class="t1">
+		두 개의 데이터 프레임을 특정 키(T_name)를 기준으로 결합하는 함수는 merge() 함수이다. merge() 함수는 R에서 두 개의 데이터 프레임을 병합할 때 사용되며, 공통된 키 변수를 기준으로 데이터를 결합한다. cbind() 함수는 데이터 프레임의 열을 기준으로 병합할 때 사용한다. rbind() 함수는 데이터 프레임의 행을 추가할 때 사용한다. subset() 함수는 데이터 프레임의 일부를 선택할 때 사용한다.				</div>
+        
+		<!-- 비기봇 해설 -->
+				<a class="more">
+			<span class="more-t1">
+				<i>비</i><i>기</i><i>봇</i><i>에</i><i>게</i><i>&nbsp;</i><i>문</i><i>의</i><i>중</i><i>…</i>
+			</span>
+			<i class="more-ic1"></i>
+		</a>
+		<div class="more-c">
+			<strong class="tt1">비기봇 해설</strong>
+			<div class="t1">
+				데이터 프레임을 특정 열을 기준으로 결합할 때 사용하는 함수는 merge입니다. 이는 두 데이터 프레임을 공통 열을 기준으로 병합하여 하나의 데이터 프레임으로 만드는 데 사용됩니다.<br>
+			</div>
+			<div class="t2">
+									#데이터 프레임 결합									# merge 함수									# 열 기준 병합							</div>
+		</div>
+		 
+		<!-- /비기봇 해설 -->
+	</div>
+</div>
+<!-- /cp1question1 -->
+<!-- cp1question1 -->
+<div class="cp1question1">
+	<div class="sg1">
+		<div class="w1">
+			<span class="g1">3과목</span>
+			<span class="g1">데이터 타입과 구조</span>
+			<b class=""></b> <!-- 정답 s1 | 오답 s2 -->
+		</div>
+		<div class="w2">
+			<button type="button" class="b1 button type0 m-cunning " onclick="bookmark(6423);" title="컨닝페이퍼에 추가"><i class="ic1"></i><span class="t1 blind">북마크</span></button>
+		</div>
+	</div>
+	<div class="tg1">
+		<strong class="tt1">
+			<span class="tt1n">4.</span>
+			<span class="tt1t1">
+				다음 중 출력 결과가 다른 R코드는 무엇인가?							</span>
+		</strong>
+		<span class="tt1t1">
+				    </span> 
+	</div>
+	<ol class="lst1">
+				<li class="li1"><a class="a1"><span class="t1">
+			a&lt;-seq(1,10,1)					</span></a></li>
+		<li class="li1"><a class="a1"><span class="t1">
+			b&lt;-c(1,10) 					</span></a></li>
+		<li class="li1"><a class="a1"><span class="t1">
+			c&lt;-1:10					</span></a></li>
+		<li class="li1"><a class="a1"><span class="t1">
+			d&lt;-seq(10,100,10)/10					</span></a></li>
+					</ol>
+	<div class="eg1">
+		<a href="#m-help1a4" class="b2 help on" title="해설 여닫기"> <!-- m-help1a1, m-help1a2, … -->
+			<span class="t1">정답보기</span>
+			<i class="ic1"></i>
+		</a>
+	</div>
+	<div class="tg2 loaded" id="m-help1a4" style=""> <!-- m-help1a1, m-help1a2, … -->
+		<strong class="tt1">정답</strong>
+		<div class="t2">
+						<i class="t2n">2</i>
+			<span class="t2t1">
+			b&lt;-c(1,10) 			</span>
+					</div>
+        <br>
+          
+        
+				<strong class="tt1">해설</strong>
+		<div class="t1">
+		b&lt;-c(1,10)은 두 원소만 포함된 벡터를 생성하며 다른 코드들과 결과가 다르다. 나머지 코드들은 1부터 10까지 연속적인 숫자로 구성된 벡터를 생성한다.				</div>
+        
+		<!-- 비기봇 해설 -->
+				<a class="more">
+			<span class="more-t1">
+				<i>비</i><i>기</i><i>봇</i><i>에</i><i>게</i><i>&nbsp;</i><i>문</i><i>의</i><i>중</i><i>…</i>
+			</span>
+			<i class="more-ic1"></i>
+		</a>
+		<div class="more-c">
+			<strong class="tt1">비기봇 해설</strong>
+			<div class="t1">
+				출력 결과가 다른 R코드를 찾는 문제로, 각 코드가 생성하는 벡터의 내용을 비교해야 합니다.  <br>
+<br>
+ 1. `a&lt;-seq(1,10,1)`은 1부터 10까지 1씩 증가하는 수열을 생성합니다. 이는 1부터 10까지의 정수를 포함하는 벡터입니다.<br>
+<br>
+2. `b&lt;-c(1,10)`은 1과 10만을 포함하는 벡터를 생성합니다. 이는 다른 보기들과 달리 두 개의 숫자만 포함되어 있어 결과가 다릅니다.<br>
+<br>
+3. `c&lt;-1:10`은 1부터 10까지의 정수를 포함하는 벡터를 생성합니다. 이는 `seq(1,10,1)`과 동일한 결과를 가집니다.<br>
+<br>
+4. `d&lt;-seq(10,100,10)/10`은 1부터 10까지 1씩 증가하는 수열을 생성합니다. 이는 `seq(1,10,1)`과 동일한 결과를 가집니다.<br>
+			</div>
+			<div class="t2">
+									#R코드									# 벡터 생성									# 수열							</div>
+		</div>
+		 
+		<!-- /비기봇 해설 -->
+	</div>
+</div>
+<!-- /cp1question1 -->
+<!-- cp1question1 -->
+<div class="cp1question1">
+	<div class="sg1">
+		<div class="w1">
+			<span class="g1">3과목</span>
+			<span class="g1">데이터 타입과 구조</span>
+			<b class=""></b> <!-- 정답 s1 | 오답 s2 -->
+		</div>
+		<div class="w2">
+			<button type="button" class="b1 button type0 m-cunning " onclick="bookmark(6774);" title="컨닝페이퍼에 추가"><i class="ic1"></i><span class="t1 blind">북마크</span></button>
+		</div>
+	</div>
+	<div class="tg1">
+		<strong class="tt1">
+			<span class="tt1n">5.</span>
+			<span class="tt1t1">
+				아래 R 코드로 생성되는 행렬 A에서 일부 원소를 추출하기 위한 코드 중 나머지 보기와 결과가 다른 것은?					
+					<span class="tt1t1">
+						A &lt;- cbind( c(1,2,3), c(4,5,6), c(7,8,9) ) <br>
+colnames(A) &lt;- c(“A”, “B”, “C”)<br>
+rownames(A) &lt;- c(“r1”, “r2”, “r3”)					</span>
+							</span>
+		</strong>
+		<span class="tt1t1">
+				    </span> 
+	</div>
+	<ol class="lst1">
+				<li class="li1"><a class="a1"><span class="t1">
+			A[,“A”]					</span></a></li>
+		<li class="li1"><a class="a1"><span class="t1">
+			A[-c(2,3), ]					</span></a></li>
+		<li class="li1"><a class="a1"><span class="t1">
+			A[,1]					</span></a></li>
+		<li class="li1"><a class="a1"><span class="t1">
+			A[,-(2:3)]					</span></a></li>
+					</ol>
+	<div class="eg1">
+		<a href="#m-help1a5" class="b2 help on" title="해설 여닫기"> <!-- m-help1a1, m-help1a2, … -->
+			<span class="t1">정답보기</span>
+			<i class="ic1"></i>
+		</a>
+	</div>
+	<div class="tg2 loaded" id="m-help1a5" style=""> <!-- m-help1a1, m-help1a2, … -->
+		<strong class="tt1">정답</strong>
+		<div class="t2">
+						<i class="t2n">2</i>
+			<span class="t2t1">
+			A[-c(2,3), ]			</span>
+					</div>
+        <br>
+          
+        
+				<strong class="tt1">해설</strong>
+		<div class="t1">
+		아래의 R코드의 결과는 첫 열은 1 2 3 둘째 열은 4 5 6 셋째 열은 7 8 9가 나타나는 3X3 행렬이다. 4가지의 선택지중 A[-c(2,3), ] 을 제외한 나머지는 1 2 3 을 A[-c(2,3), ] 은 1 4 7 을 추출한다.				</div>
+        
+		<!-- 비기봇 해설 -->
+				<a class="more">
+			<span class="more-t1">
+				<i>비</i><i>기</i><i>봇</i><i>에</i><i>게</i><i>&nbsp;</i><i>문</i><i>의</i><i>중</i><i>…</i>
+			</span>
+			<i class="more-ic1"></i>
+		</a>
+		<div class="more-c">
+			<strong class="tt1">비기봇 해설</strong>
+			<div class="t1">
+				2번 선택지는 행을 제외하는 방식으로, 나머지 선택지와 다른 결과를 생성합니다. 다른 선택지들은 모두 첫 번째 열을 선택하는 코드로 동일한 결과를 생성합니다.<br>
+			</div>
+			<div class="t2">
+									#R 프로그래밍									# 행렬 인덱싱									# 데이터 추출							</div>
+		</div>
+		 
+		<!-- /비기봇 해설 -->
+	</div>
+</div>
+<!-- /cp1question1 -->
+<!-- cp1question1 -->
+<div class="cp1question1">
+	<div class="sg1">
+		<div class="w1">
+			<span class="g1">3과목</span>
+			<span class="g1">데이터 타입과 구조</span>
+			<b class=""></b> <!-- 정답 s1 | 오답 s2 -->
+		</div>
+		<div class="w2">
+			<button type="button" class="b1 button type0 m-cunning " onclick="bookmark(5942);" title="컨닝페이퍼에 추가"><i class="ic1"></i><span class="t1 blind">북마크</span></button>
+		</div>
+	</div>
+	<div class="tg1">
+		<strong class="tt1">
+			<span class="tt1n">6.</span>
+			<span class="tt1t1">
+				여섯 가지 닭 사료 첨가물의 효과를 비교한 데이터에 대한 요약 통계 결과이다. 다음 중 데이터 요약에 대한 설명으로 부적절한 것은?							</span>
+		</strong>
+		<span class="tt1t1">
+						<a href="exam1view1img1.php?img=ca2c3b6d-0c58-b13f-d27b-bc415e2b0085.png" target="_blank" rel="noopener" title="새 창" class="p1">
+				<img src="https://www.dataedupt.kr/data/img/question/ca2c3b6d-0c58-b13f-d27b-bc415e2b0085.png" alt="문제에 포함된 이미지">
+			</a>
+				    </span> 
+	</div>
+	<ol class="lst1">
+				<li class="li1"><a class="a1"><span class="t1">
+			Weight의 중앙값은 261.3이다.					</span></a></li>
+		<li class="li1"><a class="a1"><span class="t1">
+			feed는 닭 사료 첨가물 종류를 나타내며 범주형 변수이다.					</span></a></li>
+		<li class="li1"><a class="a1"><span class="t1">
+			약 25%의 닭의 weight가 204.5보다 작다.					</span></a></li>
+		<li class="li1"><a class="a1"><span class="t1">
+			weight의 범위는 최대값과 최소값의 차이로, 315이다.					</span></a></li>
+					</ol>
+	<div class="eg1">
+		<a href="#m-help1a6" class="b2 help on" title="해설 여닫기"> <!-- m-help1a1, m-help1a2, … -->
+			<span class="t1">정답보기</span>
+			<i class="ic1"></i>
+		</a>
+	</div>
+	<div class="tg2 loaded" id="m-help1a6" style=""> <!-- m-help1a1, m-help1a2, … -->
+		<strong class="tt1">정답</strong>
+		<div class="t2">
+						<i class="t2n">1</i>
+			<span class="t2t1">
+			Weight의 중앙값은 261.3이다.			</span>
+					</div>
+        <br>
+          
+        
+				<strong class="tt1">해설</strong>
+		<div class="t1">
+		Weight의 중앙값은 summary 결과에서 258.0으로 나타나 있다. 중앙값은 데이터를 정렬했을 때 중간에 위치한 값으로, Median으로 표현하며, 평균(mean)과는 다른 개념이다. 따라서 "Weight의 중앙값은 261.3이다"라는 설명은 부적절하다. feed 변수는 닭 사료 첨가물의 종류를 나타내며 범주형 변수라는 설명은 옳은 설명이며, 약 25%의 닭의 weight가 204.5보다 작다는 설명도 1사분위수(1st Qu.)를 기준으로 하므로 정확하다. 또한 weight의 범위를 최대값과 최소값의 차이로 계산하면, 423.0 - 108.0 = 315.0이다.				</div>
+        
+		<!-- 비기봇 해설 -->
+				<a class="more">
+			<span class="more-t1">
+				<i>비</i><i>기</i><i>봇</i><i>에</i><i>게</i><i>&nbsp;</i><i>문</i><i>의</i><i>중</i><i>…</i>
+			</span>
+			<i class="more-ic1"></i>
+		</a>
+		<div class="more-c">
+			<strong class="tt1">비기봇 해설</strong>
+			<div class="t1">
+				summary 함수는 데이터의 요약 통계량을 제공합니다. 연속형 변수는 최소값, 최대값, 중앙값(Median), 평균(Mean), 1사분위수(1st Quartile), 3사분위수(3rd Quartile)를 보여주며, 범주형 변수는 각 범주별 데이터 빈도를 나타냅니다.<br>
+<br>
+1. Weight의 중앙값은 261.3이다. <br>
+: summary 결과에서 weight의 중앙값(Median)은 258.0으로 표시되어 있습니다. 중앙값은 데이터를 오름차순으로 정렬했을 때 중간에 위치한 값을 나타냅니다. 따라서 중앙값이 261.3이라는 설명은 잘못된 정보입니다.<br>
+<br>
+2. feed는 닭 사료 첨가물 종류를 나타내며 범주형 변수이다.<br>
+: summary 결과에서 feed는 닭 사료 첨가물 종류를 나타내며, casein, horsebean, linseed 등 총 6개의 범주로 구성되어 있습니다. 각 범주의 빈도(casein: 12, horsebean: 10 등)가 표시되어 있으므로 feed가 범주형 변수임을 명확히 알 수 있습니다.<br>
+<br>
+3. 약 25%의 닭의 weight가 204.5보다 작다.<br>
+: summary 결과에서 weight의 1st Qu. 값이 204.5로 나타나 있습니다. 1사분위수(1st Quartile)는 데이터의 하위 25%가 해당 값보다 작거나 같음을 의미합니다. 따라서 약 25%의 닭의 weight가 204.5보다 작다는 설명은 정확합니다.<br>
+<br>
+4. weight의 범위는 최대값과 최소값의 차이로, 315이다.<br>
+: summary 결과에서 weight의 최대값은 423.0, 최소값은 108.0으로 나타나 있습니다. 범위(Range)는 데이터의 최대값에서 최소값을 뺀 값으로, 계산해보면 423.0 - 108.0 = 315.0이 됩니다. 따라서 weight의 범위는 315입니다.<br>
+			</div>
+			<div class="t2">
+									#중앙값									# 요약 통계량									# 범주형 변수									# 범위							</div>
+		</div>
+		 
+		<!-- /비기봇 해설 -->
+	</div>
+</div>
+<!-- /cp1question1 -->
+<!-- cp1question1 -->
+<div class="cp1question1">
+	<div class="sg1">
+		<div class="w1">
+			<span class="g1">3과목</span>
+			<span class="g1">데이터 타입과 구조</span>
+			<b class=""></b> <!-- 정답 s1 | 오답 s2 -->
+		</div>
+		<div class="w2">
+			<button type="button" class="b1 button type0 m-cunning " onclick="bookmark(6428);" title="컨닝페이퍼에 추가"><i class="ic1"></i><span class="t1 blind">북마크</span></button>
+		</div>
+	</div>
+	<div class="tg1">
+		<strong class="tt1">
+			<span class="tt1n">7.</span>
+			<span class="tt1t1">
+				Carseats 데이터 프레임은 400개 상점에서 판매 중인 유아용 카시트의 재료이고, Sales 변수는 해당 상점에서 판매된 카시트의 수를 나타낸다. 다음 중 R 패키지에서 Sales 변수의 표준편차를 계산하기 위한 식으로 가장 부적절한 것은?							</span>
+		</strong>
+		<span class="tt1t1">
+				    </span> 
+	</div>
+	<ol class="lst1">
+				<li class="li1"><a class="a1"><span class="t1">
+			stdev(Carseats$Sales) 					</span></a></li>
+		<li class="li1"><a class="a1"><span class="t1">
+			sd(Carseats$Sales) 					</span></a></li>
+		<li class="li1"><a class="a1"><span class="t1">
+			sqrt(var(Carseats$Sales)) 					</span></a></li>
+		<li class="li1"><a class="a1"><span class="t1">
+			var(Carseats$Sales)^(1/2)					</span></a></li>
+					</ol>
+	<div class="eg1">
+		<a href="#m-help1a7" class="b2 help on" title="해설 여닫기"> <!-- m-help1a1, m-help1a2, … -->
+			<span class="t1">정답보기</span>
+			<i class="ic1"></i>
+		</a>
+	</div>
+	<div class="tg2 loaded" id="m-help1a7" style=""> <!-- m-help1a1, m-help1a2, … -->
+		<strong class="tt1">정답</strong>
+		<div class="t2">
+						<i class="t2n">1</i>
+			<span class="t2t1">
+			stdev(Carseats$Sales) 			</span>
+					</div>
+        <br>
+          
+        
+				<strong class="tt1">해설</strong>
+		<div class="t1">
+		R에서 표준편차를 계산하는 함수는 sd()가 표준이며, sqrt(var()) 역시 분산의 제곱근을 이용해 표준편차를 계산할 수 있다. 그러나 stdev()는 R의 기본 패키지에 존재하지 않는 함수이므로 에러가 발생한다.				</div>
+        
+		<!-- 비기봇 해설 -->
+				<a class="more">
+			<span class="more-t1">
+				<i>비</i><i>기</i><i>봇</i><i>에</i><i>게</i><i>&nbsp;</i><i>문</i><i>의</i><i>중</i><i>…</i>
+			</span>
+			<i class="more-ic1"></i>
+		</a>
+		<div class="more-c">
+			<strong class="tt1">비기봇 해설</strong>
+			<div class="t1">
+				데이터 분석에서 표준편차를 계산하기 위해 R에서 주로 사용하는 함수는 sd()입니다.  <br>
+   1. stdev(Carseats$Sales): R에서는 stdev()라는 함수를 제공하지 않으므로, 이 식은 오류를 발생시킵니다.  <br>
+   2. sd(Carseats$Sales): R에서 표준편차를 계산하는 데 사용되는 올바른 함수입니다.  <br>
+   3. sqrt(var(Carseats$Sales)): 분산을 계산한 후 제곱근을 취하여 표준편차를 구하는 방법으로, 올바른 접근입니다.  <br>
+   4. var(Carseats$Sales)^(1/2): 분산의 제곱근을 취하여 표준편차를 구하는 방법으로, 올바른 접근입니다.<br>
+			</div>
+			<div class="t2">
+									#표준편차									# R 패키지									# 데이터 분석									# 함수 사용							</div>
+		</div>
+		 
+		<!-- /비기봇 해설 -->
+	</div>
+</div>
+<!-- /cp1question1 -->
+
+<script>/*<![CDATA[*/
+	// 20240424.
+	// $('#m-help1').show().addClass('loaded');
+/*]]>*/</script>
+
+
+<script>/*<![CDATA[*/
+	$('.w1').remove();
+	$('.w2').remove();
+	$(".tg2").hide()
+	
+	// 정답보기 토글. 20240702. @m.	
+	$('.b2.help').parent().next('.tg2').hide(); // 정답, 해설 모두 감춤
+	$('.b2.help').on('click', function(e){
+		e.preventDefault();
+		$(this).closest('.eg1').next('.tg2').toggle();
+	});	
+/*]]>*/
+
+
+</script>
+
+</div>
+</body>
+</html>
