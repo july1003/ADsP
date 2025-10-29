@@ -1,5 +1,5 @@
 # ADsP
-adsp시험 공부용
+adsp시험 연습문제 과목별
 
 - [DataEduPT_1.html](DataEduPT_1.html)
 - [DataEduPT_2.html](DataEduPT_2.html)
