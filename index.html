@@ -3,66 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <title>ADsP 시험 대비</title>
+<!-- 무료 한글 폰트 적용 -->
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
-
 </head>
 <body>
-<!-- 무료 한글 폰트 적용 -->
-
 <style>
   body {
     font-family: 'Noto Sans KR', 'Nanum Gothic', 'Malgun Gothic', 'Apple SD Gothic Neo', Arial, sans-serif;
-    margin: 0; padding: 0;
-    background: #ffffff;
+    margin: 0; padding: 20px;
+    background: #fff8f0;
   }
   .card-group {
     display: flex;
     flex-wrap: wrap;
     gap: 18px;
     justify-content: center;
-    margin: 30px 0;
+    margin: 36px 0;
   }
   .card {
     flex: 1 1 280px;
     min-width: 240px;
     max-width: 350px;
-    background: #f9f9fc;
+    background-size: cover;
+    background-position: center bottom;
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(150,150,180,0.08);
-    padding: 18px 18px 8px 18px;
+    box-shadow: 0 2px 16px rgba(150,100,60,0.12);
+    padding: 22px 22px 10px 22px;
+    position: relative;
+    overflow: hidden;
+  }
+  .card1 {
+    background: linear-gradient(120deg, #FFE5B4 82%, #FFC947 100%);
+    background-image: url('https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80');
+    /* 학생 책상 공부 */
+  }
+  .card2 {
+    background: linear-gradient(120deg, #FFDFDF 82%, #FFBB86 100%);
+    background-image: url('https://images.unsplash.com/photo-1456327102063-fc015c13e5d7?auto=format&fit=crop&w=800&q=80');
+    /* 카페에서 공부 */
+  }
+  .card3 {
+    background: linear-gradient(120deg, #FFFACD 82%, #FFD18C 100%);
+    background-image: url('https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=800&q=80');
+    /* 독서, 핵심 개념정리 느낌 */
+  }
+  .card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,240,0.72);
+    z-index: 0;
+    border-radius: 12px;
   }
   .card h2 {
+    position: relative;
     font-size: 1.13em; font-weight: 700;
-    margin: 0 0 10px; color: #222a44;
+    margin: 0 0 14px; color: #444022;
     border-bottom: 1px solid #e7e7ed;
     padding-bottom: 8px;
+    z-index: 1;
+    background: transparent;
   }
   ul {
+    position: relative;
     margin: 0;
     padding-left: 18px;
+    z-index: 1;
   }
   li {
     line-height: 2.3em;
-    margin-bottom: 12px;
-    font-size: 1.07em;
+    margin-bottom: 14px;
+    font-size: 1.10em;
+    transition: background 0.2s;
+    border-radius: 7px;
+    padding: 0 2px;
+  }
+  li:hover {
+    background: #fff8e0;
   }
   a {
     text-decoration: none;
     color: #222;
-    transition: color 0.2s;
+    transition: color 0.18s;
   }
   a:hover {
-    color: #0070ff;
+    color: #d87b00;
     text-decoration: underline;
   }
   @media (max-width: 900px) {
-    .card-group { flex-direction: column; gap: 26px; align-items: center; }
+    .card-group { flex-direction: column; gap: 29px; align-items: center;}
     .card { max-width: 98vw;}
   }
 </style>
 
 <div class="card-group">
-  <div class="card">
+  <div class="card card1">
     <h2>모의고사</h2>
     <ul>
       <li><a href="Mock1.html">Mock1.html</a></li>
@@ -70,7 +105,7 @@
       <li><a href="Mock3.html">Mock3.html</a></li>
     </ul>
   </div>
-  <div class="card">
+  <div class="card card2">
     <h2>연습문제</h2>
     <ul>
       <li><a href="DataEduPT_1.html">DataEduPT_1.html</a></li>
@@ -82,7 +117,7 @@
       <li><a href="DataEduPT_3-5.html">DataEduPT_3-5.html</a></li>
     </ul>
   </div>
-  <div class="card">
+  <div class="card card3">
     <h2>핵심개념정리</h2>
     <ul>
       <li><a href="keyConcept1.html">keyConcept1.html</a></li>
@@ -93,8 +128,6 @@
     </ul>
   </div>
 </div>
-
-
 
 </body>
 </html>
