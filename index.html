@@ -3,85 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <title>ADsP 시험 대비</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
+<!-- 무료 한글 폰트 적용 -->
+
 <style>
-  body, table, th, td, ul, li, a {
+  body {
     font-family: 'Noto Sans KR', 'Nanum Gothic', 'Malgun Gothic', 'Apple SD Gothic Neo', Arial, sans-serif;
-  }  
-  table {
-    width: 100%;
-    border-collapse: collapse;
+    margin: 0; padding: 0;
+    background: #ffffff;
   }
-  th {
-    background-color: #f2f2f2;
-    font-size: 1.1em;
-    padding: 8px;
-    border: 1px solid #aaa;
+  .card-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+    margin: 30px 0;
   }
-  td {
-    vertical-align: top;
-    padding: 10px;
-    border: 1px solid #aaa;
-    width: 33%;
+  .card {
+    flex: 1 1 280px;
+    min-width: 240px;
+    max-width: 350px;
+    background: #f9f9fc;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(150,150,180,0.08);
+    padding: 18px 18px 8px 18px;
+  }
+  .card h2 {
+    font-size: 1.13em; font-weight: 700;
+    margin: 0 0 10px; color: #222a44;
+    border-bottom: 1px solid #e7e7ed;
+    padding-bottom: 8px;
   }
   ul {
     margin: 0;
     padding-left: 18px;
   }
   li {
-    line-height: 2.2em;      /* 줄간격 넓게 */
-    margin-bottom: 6px;       /* 아래 간격 추가 */
-    font-size: 1.05em;        /* 조금 더 큰 글씨 */
+    line-height: 2.3em;
+    margin-bottom: 12px;
+    font-size: 1.07em;
   }
   a {
     text-decoration: none;
     color: #222;
-    font-family:
+    transition: color 0.2s;
   }
   a:hover {
     color: #0070ff;
     text-decoration: underline;
   }
+  @media (max-width: 900px) {
+    .card-group { flex-direction: column; gap: 26px; align-items: center; }
+    .card { max-width: 98vw;}
+  }
 </style>
 
-<table>
-  <tr>
-    <th>모의고사</th>
-    <th>연습문제</th>
-    <th>핵심개념정리</th>
-  </tr>
-  <tr>
-    <td valign="top">
-      <ul>
-        <li><a href="Mock1.html">Mock1.html</a></li>
-        <li><a href="Mock2.html">Mock2.html</a></li>
-        <li><a href="Mock3.html">Mock3.html</a></li>
-      </ul>
-    </td>
-    <td valign="top">
-      <ul>
-        <li><a href="DataEduPT_1.html">DataEduPT_1.html</a></li>
-        <li><a href="DataEduPT_2.html">DataEduPT_2.html</a></li>
-        <li><a href="DataEduPT_3-1.html">DataEduPT_3-1.html</a></li>
-        <li><a href="DataEduPT_3-2.html">DataEduPT_3-2.html</a></li>
-        <li><a href="DataEduPT_3-3.html">DataEduPT_3-3.html</a></li>
-        <li><a href="DataEduPT_3-4.html">DataEduPT_3-4.html</a></li>
-        <li><a href="DataEduPT_3-5.html">DataEduPT_3-5.html</a></li>
-      </ul>
-    </td>
-    <td valign="top">
-      <ul>
-        <li><a href="keyConcept1.html">keyConcept1.html</a></li>
-        <li><a href="keyConcept2.html">keyConcept2.html</a></li>
-        <li><a href="keyConcept3.html">keyConcept3.html</a></li>
-        <li><a href="keyConcept4.html">keyConcept4.html</a></li>
-        <li><a href="keyConcept5.html">keyConcept5.html</a></li>
-      </ul>
-    </td>
-  </tr>
-</table>
+<div class="card-group">
+  <div class="card">
+    <h2>모의고사</h2>
+    <ul>
+      <li><a href="Mock1.html">Mock1.html</a></li>
+      <li><a href="Mock2.html">Mock2.html</a></li>
+      <li><a href="Mock3.html">Mock3.html</a></li>
+    </ul>
+  </div>
+  <div class="card">
+    <h2>연습문제</h2>
+    <ul>
+      <li><a href="DataEduPT_1.html">DataEduPT_1.html</a></li>
+      <li><a href="DataEduPT_2.html">DataEduPT_2.html</a></li>
+      <li><a href="DataEduPT_3-1.html">DataEduPT_3-1.html</a></li>
+      <li><a href="DataEduPT_3-2.html">DataEduPT_3-2.html</a></li>
+      <li><a href="DataEduPT_3-3.html">DataEduPT_3-3.html</a></li>
+      <li><a href="DataEduPT_3-4.html">DataEduPT_3-4.html</a></li>
+      <li><a href="DataEduPT_3-5.html">DataEduPT_3-5.html</a></li>
+    </ul>
+  </div>
+  <div class="card">
+    <h2>핵심개념정리</h2>
+    <ul>
+      <li><a href="keyConcept1.html">keyConcept1.html</a></li>
+      <li><a href="keyConcept2.html">keyConcept2.html</a></li>
+      <li><a href="keyConcept3.html">keyConcept3.html</a></li>
+      <li><a href="keyConcept4.html">keyConcept4.html</a></li>
+      <li><a href="keyConcept5.html">keyConcept5.html</a></li>
+    </ul>
+  </div>
+</div>
 
 
 
